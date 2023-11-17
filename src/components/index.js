@@ -3,7 +3,7 @@ export { default as Education } from "./Education/Education";
 export { default as Testimonials } from "./Testimonials/Testimonials";
 export { default as Projects } from "./Projects/Projects";
 export { default as Services } from "./Services/Services";
-export { default as Hireme } from "./Hireme/Hireme";
+
 export { default as Contact } from "./Contact/Contact";
 export { default as Skills } from "./Skills/Skills";
 

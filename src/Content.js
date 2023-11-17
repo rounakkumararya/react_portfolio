@@ -1,5 +1,6 @@
 // import images
-import Hero_person from "./assets/images/Hero/person.png";
+import Hero_person from "./assets/images/Hero/hero.png";
+import Hero_bg from "./assets/images/Hero/heroBG.png";
 
 import figma from "./assets/images/Skills/figma.png";
 import ps from "./assets/images/Skills/ps.png";
@@ -7,7 +8,7 @@ import reactjs from "./assets/images/Skills/react.png";
 import nodejs from "./assets/images/Skills/node.png";
 import python from "./assets/images/Skills/python.png";
 
-import logo from "../src/assets/images/logo/logo.png";
+import logo from "../src/assets/images/logo/logo.svg";
 import services_logo1 from "./assets/images/Services/Group 42.svg";
 import services_logo2 from "./assets/images/Services/Group 42.svg";
 import services_logo3 from "./assets/images/Services/Group 42.svg";
@@ -22,9 +23,16 @@ import avatar2 from "./assets/images/Testimonials/avatar2.png";
 import avatar3 from "./assets/images/Testimonials/avatar3.png";
 import avatar4 from "./assets/images/Testimonials/avatar4.png";
 
+import facebook_ico from "./assets/images/Socials/facebook.png";
+import twitter_ico from "./assets/images/Socials/twitter.png";
+import instagram_ico from "./assets/images/Socials/instagram.png";
+import linkedin_ico from "./assets/images/Socials/linkedin.png";
+import dribbble_ico from "./assets/images/Socials/dribbble.png";
+import behance_ico from "./assets/images/Socials/behance.png";
+
 // import Hireme_person from "./assets/images/Hireme/person.png";
 import about_img from "./assets/images/About/person1.svg";
-import edu_img from "./assets/images/Education/Education1.svg";
+import edu_img from "./assets/images/Education/Education.svg";
 import Achievements_img from "./assets/images/Achievements/Achievement.svg";
 
 // import icons from react-icons
@@ -32,8 +40,16 @@ import { GrMail } from "react-icons/gr";
 import { MdArrowForward, MdCall } from "react-icons/md";
 import { BsInstagram } from "react-icons/bs";
 import { TbSmartHome } from "react-icons/tb";
-import { FaToolbox } from "react-icons/fa";
+import { FaToolbox, FaGithub } from "react-icons/fa";
 import { BiUser } from "react-icons/bi";
+import {
+  AiFillInstagram,
+  AiFillTwitterCircle,
+  AiFillLinkedin,
+  AiFillBehanceSquare,
+  AiFillDribbbleCircle,
+} from "react-icons/ai";
+import { BsFacebook } from "react-icons/bs";
 import { RiServiceLine, RiProjectorLine } from "react-icons/ri";
 import { MdOutlinePermContactCalendar } from "react-icons/md";
 
@@ -43,36 +59,82 @@ export const content = {
   },
   nav: [
     {
+      name: "Home",
       link: "#home",
       icon: TbSmartHome,
     },
     {
+      name: "Skills",
       link: "#skills",
       icon: FaToolbox,
     },
     {
+      name: "About",
       link: "#about",
       icon: BiUser,
     },
     {
+      name: "Services",
       link: "#services",
       icon: RiServiceLine,
     },
     {
+      name: "Projects",
       link: "#projects",
       icon: RiProjectorLine,
     },
     {
+      name: "Contact me",
       link: "#contact",
       icon: MdOutlinePermContactCalendar,
     },
   ],
+  socials: [
+    {
+      link: "https://www.linkedin.com/in/rounak-kumar-arya/",
+      icon: AiFillLinkedin,
+      color: "#0072b1",
+    },
+    {
+      link: "www.instagram.com",
+      icon: AiFillInstagram,
+      color: "red",
+    },
+
+    {
+      link: "www.twitter.com",
+      icon: AiFillTwitterCircle,
+      color: " #00acee",
+    },
+    {
+      link: "www.github.com",
+      icon: FaGithub,
+      color: "#00000",
+    },
+    {
+      link: "www.behance.com",
+      icon: AiFillBehanceSquare,
+      color: "#053eff",
+    },
+    {
+      link: "www.dribble.com",
+      icon: AiFillDribbbleCircle,
+      color: "#ea4c89",
+    },
+    {
+      link: "www.facebook.com",
+      icon: BsFacebook,
+      color: "#1877F2",
+    },
+  ],
+
   hero: {
     title: ["UI/UX Designer", "MERN Developer"],
     firstName: "ROUNAK",
     LastName: "ARYA",
-    btnText: ["Hire Me", "Socials"],
+    btnText: ["Resume", "Socials"],
     image: Hero_person,
+    background: Hero_bg,
     hero_content: [
       {
         count: "+5",
@@ -101,14 +163,14 @@ export const content = {
     image: edu_img,
     details: [
       {
-        year: "2010-2019",
-        degree: "High school diploma",
-        institute: "D.A.V. Public School, Hazaribagh",
-      },
-      {
-        year: "2021-2023",
+        year: "2021-2024",
         degree: "B.S. in Physics",
         institute: "Vinoba Bhave University, Hazaribagh",
+      },
+      {
+        year: "2017-2019",
+        degree: "High school diploma",
+        institute: "D.A.V. Public School, Hazaribagh",
       },
     ],
   },

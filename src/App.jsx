@@ -1,7 +1,6 @@
 // import components
 import {
   Hero,
-  Hireme,
   Contact,
   Services,
   Education,
@@ -50,9 +49,6 @@ const App = () => {
       </section>
       <section>
         <Projects />
-      </section>
-      <section>
-        <Hireme />
       </section>
       <section>
         <Testimonials />

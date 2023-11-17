@@ -6,9 +6,9 @@ const Skills = () => {
   const { Skills } = content;
 
   return (
-    <div className="  px-5  py-14">
+    <div className="bg-zinc-800 px-5  py-14">
       <h1
-        className="title  text-red-800 lg:text-6xl text-center"
+        className="title  text-lime-500 lg:text-6xl text-center"
         data-aos="fade-down"
       >
         {Skills.title}
@@ -26,7 +26,7 @@ const Skills = () => {
             key={i}
             className="sm:cursor-pointer 
                relative group flex  items-center mt-8
-               gap-10 p-6 rounded-full bg-red-800 "
+               gap-10 p-6 rounded-full bg-lime-500 "
           >
             <p className="text-white">{skill.name}</p>
             <img

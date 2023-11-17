@@ -5,10 +5,10 @@ const About = () => {
   const { About } = content;
 
   return (
-    <section className=" relative bg-bg_light_primary">
+    <section className=" relative bg-zinc-900">
       <div className=" px-32  py-14">
         <h1
-          className="title text-red-900  lg:text-6xl text-start"
+          className="title text-lime-500  lg:text-6xl text-start"
           data-aos="fade-down"
         >
           {About.title}
@@ -18,12 +18,12 @@ const About = () => {
         </h4>
         <br />
 
-        <div className="flex items-center justify-center">
+        <div className="flex items-center align-center justify-evenly">
           <img
             src={About.image}
             alt="about me image"
             data-aos="fade-right"
-            className="max-w-2xl "
+            className="max-w-xl "
           />
 
           <div
@@ -31,17 +31,17 @@ const About = () => {
             className=" max-w-lg 
            p-6 shadow-sm rounded-xl rounded-br-[8rem] sm:min-w-[62rem]"
           >
-            <h4>Rounak Kumar arya</h4>
+            <h4 className="text-white">Rounak Kumar arya</h4>
             <br />
-            <p className="leading-7">{About.para[0]}</p>
+            <p className="text-white leading-7">{About.para[0]}</p>
             <br />
           </div>
         </div>
       </div>
       <div className="line-styling">
-        <div className="style-line bg-red-800"></div>
-        <div className="style-circle bg-red-800"></div>
-        <div className="style-circle bg-red-800"></div>
+        <div className="style-line bg-lime-500"></div>
+        <div className="style-circle bg-lime-500"></div>
+        <div className="style-circle bg-lime-500"></div>
       </div>
     </section>
   );

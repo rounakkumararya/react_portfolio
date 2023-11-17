@@ -38,7 +38,7 @@ const Navbar = () => {
     height: "60px",
     width: "100%",
     textAlign: "center",
-    transition: "top 0.9s",
+    transition: "top 0.7s",
   };
 
   return (
@@ -47,13 +47,13 @@ const Navbar = () => {
       className=" z-[999] w-full flex justify-center"
     >
       <div
-        className="active:scale-95 font-medium shadow-xl hover:scale-125  duration-200  absolute top-10 left-10 z-[999] rounded-lg bg-red-900 p-2"
+        className="active:scale-95 font-medium shadow-xl hover:scale-125 bg-lime-500  duration-200  absolute top-10 right-10 z-[999] rounded-2xl p-2"
         onClick={() => setShowMenu(!showMenu)}
       >
-        <HiMenuAlt2 size={34} />
+        <HiMenuAlt2 color="white" size={34} />
       </div>
       <img
-        className="absolute md:top-10 top-16 right-10 z-[999] md:w-60 w-20"
+        className="absolute md:top-10 top-12 left-10 z-[999] md:w-60 w-40"
         src={logoImg.img}
         alt="logo"
       />
@@ -67,7 +67,7 @@ const Navbar = () => {
             href={item.link}
             onClick={() => setActive(i)}
             className={`text-xl p-2.5 rounded-full active:scale-95 font-medium hover:scale-125  duration-200
-     ${i === active && " bg-red-700 text-white"} `}
+     ${i === active && " bg-lime-500 text-white"} `}
           >
             {createElement(item.icon)}
           </a>

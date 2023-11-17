@@ -6,10 +6,10 @@ const Services = () => {
   const { Services } = content;
 
   return (
-    <section className=" min-h-fit bg-stone-100" id="skills">
+    <section className=" min-h-fit bg-zinc-900" id="skills">
       <div className=" px-32  py-14">
         <h1
-          className="title text-red-900  lg:text-6xl text-start"
+          className="title text-lime-500  lg:text-6xl text-start"
           data-aos="fade-down"
         >
           {Services.title}
@@ -25,7 +25,7 @@ const Services = () => {
               data-aos="fade-up"
               data-aos-delay={i * 400}
               key={i}
-              className="card p-10 rounded-lg m-auto card-compact max-w-md bg-base-100 bg-red-800 shadow-2xl"
+              className="card p-10 rounded-lg m-auto card-compact max-w-md bg-base-100 bg-lime-500 shadow-2xl"
             >
               <figure>
                 {/* <img
