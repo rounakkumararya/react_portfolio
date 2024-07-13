@@ -37,7 +37,7 @@ const Contact = () => {
     <section className=" bg-lime-500 text-white" id="contact">
       <Toaster />
       <div className="md:container px-5 py-14">
-        <h2 className="title !text-white" data-aos="fade-down">
+        <h2 className="title text-white" data-aos="fade-down">
           {Contact.title}
         </h2>
         <h4 className="subtitle" data-aos="fade-down">
@@ -57,7 +57,7 @@ const Contact = () => {
               name="from_name"
               placeholder="Name"
               required
-              className="border border-red-900 p-3 rounded"
+              className="border border-white p-3 rounded"
             />
             <input
               type="email"
@@ -65,16 +65,16 @@ const Contact = () => {
               pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{1,63}$"
               placeholder="Email Id"
               required
-              className="border border-slate-600 p-3 rounded"
+              className="border border-white p-3 rounded"
             />
             <textarea
               name="message"
               placeholder="Message"
-              className="border border-slate-600 p-3 rounded h-44"
+              className="border border-white p-3 rounded h-44"
               required
             ></textarea>
             <button
-              className="btn self-start
+              className="btn self-end 
             bg-white text-dark_primary"
             >
               Submit

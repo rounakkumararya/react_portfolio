@@ -13,7 +13,7 @@ const Testimonials = () => {
   const { Testimonials } = content;
   const [activeIndex, setActiveIndex] = useState(0);
   return (
-    <section className=" flex align-middle   bg-zinc-900">
+    <section className=" flex align-middle   bg-zinc-800">
       <div className="md:container  flex flex-col gap-16 text-center px-5 pt-14">
         <h1
           className="title  text-lime-500 lg:text-6xl text-center "

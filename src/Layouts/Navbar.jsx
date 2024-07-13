@@ -16,7 +16,7 @@ const Navbar = () => {
   const [visible, setVisible] = useState(true);
 
   const handleScroll = debounce(() => {
-    const currentScrollPos = window.pageYOffset;
+    const currentScrollPos = window.scrollY;
 
     setVisible(
       (prevScrollPos > currentScrollPos &&
@@ -36,24 +36,24 @@ const Navbar = () => {
   const navbarStyles = {
     position: "fixed",
     height: "60px",
-    width: "100%",
+    width: "100vw",
     textAlign: "center",
     transition: "top 0.7s",
   };
 
   return (
     <div
-      style={{ ...navbarStyles, top: visible ? "0" : "-100px" }}
+      style={{ ...navbarStyles, top: visible ? "0px" : "-125px" }}
       className=" z-[999] w-full flex justify-center"
     >
       <div
-        className="active:scale-95 font-medium shadow-xl hover:scale-125 bg-lime-500  duration-200  absolute top-10 right-10 z-[999] rounded-2xl p-2"
+        className="active:scale-95 font-medium shadow-xl hover:scale-125 bg-lime-500  duration-200  absolute top-6 right-10 z-[999] rounded-2xl p-2"
         onClick={() => setShowMenu(!showMenu)}
       >
         <HiMenuAlt2 color="white" size={34} />
       </div>
       <img
-        className="absolute md:top-10 top-12 left-10 z-[999] md:w-60 w-40"
+        className="absolute md:top-6 top-8 left-10 z-[999] md:w-60 w-40"
         src={logoImg.img}
         alt="logo"
       />

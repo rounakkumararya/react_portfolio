@@ -11,7 +11,7 @@ import { Pagination } from "swiper";
 const Projects = () => {
   const { Projects } = content;
   return (
-    <section className="bg-zinc-800 min-h-fit" id="projects">
+    <section className="bg-zinc-900 min-h-fit" id="projects">
       <div className="  px-32  py-14 min-h-screen flex flex-col justify-between">
         <div>
           <h2

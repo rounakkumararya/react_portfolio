@@ -30,9 +30,10 @@ const App = () => {
   return (
     <div className="">
       <Cursor />
-      <Navbar />
-      <section>
-        <Hero />
+
+      <section id="home">
+        <Navbar />
+        <Hero></Hero>
       </section>
       <section>
         <About />
@@ -43,10 +44,9 @@ const App = () => {
       <section>
         <Achievements />
       </section>
+
       <Skills />
-      <section>
-        <Services />
-      </section>
+
       <section>
         <Projects />
       </section>
@@ -57,9 +57,11 @@ const App = () => {
         <Contact />
       </section>
 
-      <footer className="p-3 text-center">
-        <h6 className="mb-3">Rounak kumar arya</h6>
-        <p>Arya© All CopyRights Reserved 2022</p>
+      <footer className="p-3 bg-zinc-900 text-center ">
+        <h6 className=" text-lime-500 mb-3">Rounak kumar arya</h6>
+        <p className="text-white">
+          Arya© All CopyRight Reserved {new Date().getFullYear()}{" "}
+        </p>
       </footer>
     </div>
   );

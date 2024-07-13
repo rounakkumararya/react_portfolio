@@ -10,15 +10,15 @@ const Hero = () => {
   const [showMenu, setShowMenu] = useState(false);
 
   return (
-    <section id="home" className=" overflow-hidden">
-      <div className="min-h-screen flex lg:flex-row flex-col-reverse lg:items-center justify-center items-center">
+    <section className="">
+      <div className=" min-h-screen flex lg:flex-row flex-col-reverse lg:items-center justify-center items-center">
         <div
           data-aos="slide-left"
-          data-aos-delay="200"
+          data-aos-delay="150"
           className="absolute h-full lg:w-6/12 w-3/12 top-0 right-0  bottom-0 -z-10"
         >
-          <img width="100%" src={hero.background} alt="" />
-          <h1 className="rotate-90 absolute top-[50%] right-[-15%] text-lime-500">
+          <img width="100%" height="200px" src={hero.background} alt="" />
+          <h1 className="rotate-90 absolute top-[50%] right-[-26%] text-lime-500">
             {hero.firstName}{" "}
             <span className=" text-zinc-500">{hero.LastName}</span>
           </h1>
@@ -26,7 +26,7 @@ const Hero = () => {
 
         {/* first col */}
         <div
-          className="pb-16 pl-20 lg:px-2 flex flex-col items-center justify-center w-1/2 pt-5"
+          className="pb-16 pl-20  flex flex-col align-middle items-center justify-center w-1/2 pt-20"
           data-aos="fade-down"
         >
           <h1>
@@ -55,7 +55,7 @@ const Hero = () => {
         </div>
 
         {/* sec col */}
-        <div className="pl-20 lg:px-2 md:h-[100vh] flex w-1/2 float-right items-end justify-start h-100">
+        <div className="  md:h-[100vh] flex w-1/2 float-right items-end justify-start h-100">
           <img
             src={hero.image}
             data-aos="slide-up"
@@ -73,8 +73,8 @@ const Hero = () => {
           <FaShareAlt />
         </button>
         <div
-          className={`fixed  z-[999] flex flex-col items-center gap-5 bg-slate-200/60 px-6 py-3 backdrop-blur-md rounded-full text-stone-700 duration-300 ${
-            showMenu ? "left-5 bottom-10" : "left-0 bottom-[-100%]"
+          className={`fixed  z-[999] flex flex-col items-center gap-3 duration-300 transition  ${
+            showMenu ? "left-9 bottom-10" : "hidden "
           }`}
         >
           {socials.map((item, i) => (
@@ -82,14 +82,14 @@ const Hero = () => {
               href={item.link}
               onClick={() => setActive(i)}
               target="_blank"
-              className="text-3xl active:scale-95 hover:scale-150 duration-200  p-2 rounded-full "
+              className="text-3xl  bg-slate-200/60 px-3 py-3 backdrop-blur-md  text-stone-700 active:scale-95 hover:scale-150 duration-200  p-2 rounded-full "
             >
               {createElement(item.icon, { color: item.color })}
             </a>
           ))}
           <IoClose
             onClick={() => setShowMenu(false)}
-            className="text-4xl active:scale-95 hover:scale-150 duration-200 text-lime-500 "
+            className="text-4xl  active:scale-95 hover:scale-150 transition duration-500 text-lime-500 "
           />
         </div>
       </div>

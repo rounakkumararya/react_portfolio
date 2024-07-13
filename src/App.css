@@ -3,7 +3,12 @@ html{
     scroll-behavior: smooth;
 }
 
-section{
-    height: 100vh ;
+body{
+    box-sizing: border-box;
+    
+}
 
+section{
+
+    overflow: hidden;
 }

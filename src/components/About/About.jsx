@@ -5,8 +5,8 @@ const About = () => {
   const { About } = content;
 
   return (
-    <section className=" relative bg-zinc-900">
-      <div className=" px-32  py-14">
+    <section className="  bg-zinc-900">
+      <div className=" px-16 py-14">
         <h1
           className="title text-lime-500  lg:text-6xl text-start"
           data-aos="fade-down"
@@ -16,24 +16,27 @@ const About = () => {
         <h4 className="subtitle" data-aos="fade-down">
           {About.subtitle}
         </h4>
+
         <br />
 
-        <div className="flex items-center align-center justify-evenly">
+        <div className="flex max-w-full items-center align-center justify-evenly">
           <img
             src={About.image}
             alt="about me image"
             data-aos="fade-right"
-            className="max-w-xl "
+            className=" max-w-xs"
           />
 
           <div
             data-aos="fade-left"
-            className=" max-w-lg 
+            className=" max-w-lg
            p-6 shadow-sm rounded-xl rounded-br-[8rem] sm:min-w-[62rem]"
           >
-            <h4 className="text-white">Rounak Kumar arya</h4>
+            <h4 className="text-white">{About.para[0]}</h4>
             <br />
-            <p className="text-white leading-7">{About.para[0]}</p>
+            <p className="text-white leading-7 overflow-hidden">
+              {About.para[1]}
+            </p>
             <br />
           </div>
         </div>

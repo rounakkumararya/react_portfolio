@@ -151,9 +151,10 @@ export const content = {
     subtitle: "Who am I ?",
     image: about_img,
     para: [
-      "I'm a student currently pursuing a degree in physics. Alongside my studies, I have also delved into the world of full-stack development. I find immense joy in creating and building digital solutions from the ground up. However, my passion doesn't stop there. I have a deep admiration for the art of UX designing, and it has become somewhat of a crush for me. The way user experience can be enhanced through thoughtful design choices fascinates me, and I constantly strive to improve my skills in this area. So, you could say I'm a physics graduation student who has fallen head over heels for the captivating world of UX designing.",
+      "Rounak Kumar Arya, a creative and passionate Full-Stack Web Developer & UI/UX designer.",
+      "I delved into the world of full-stack development. I find immense joy in creating and building digital solutions from the ground up. However, my passion doesn't stop there. I have a deep admiration for the art of UX designing, and it has become somewhat of a crush for me. The way user experience can be enhanced through thoughtful design choices fascinates me, and I constantly strive to improve my skills in this area. So, you could say I'm a physics graduate who has fallen head over heels for the captivating world of UX designing.",
 
-      "In addition to my academic pursuits, I am also an aspiring UX designer. I am constantly seeking opportunities to enhance my skills and knowledge in this field. I have taken various online courses and attended workshops to learn about the principles of UX design, user research, and prototyping. I am particularly interested in understanding user behavior and creating designs that not only meet their needs but also provide a delightful experience.",
+      "In addition to my  pursuits, I am also an aspiring UX designer. I am constantly seeking opportunities to enhance my skills and knowledge in this field. I have taken various online courses and worked on different projects to learn about the principles of UX design, user research, and prototyping. I am particularly interested in understanding user behavior and creating designs that not only meet their needs but also provide a delightful experience.",
     ],
     btnText: "Hire Me",
   },
@@ -169,7 +170,7 @@ export const content = {
       },
       {
         year: "2017-2019",
-        degree: "High school diploma",
+        degree: "High school",
         institute: "D.A.V. Public School, Hazaribagh",
       },
     ],
@@ -303,7 +304,7 @@ export const content = {
     btnText: "Hire Me",
   },
   Contact: {
-    title: "Contect Me",
+    title: "Contact Me",
     subtitle: "GET IN TOUCH",
     social_media: [
       {
