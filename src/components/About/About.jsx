@@ -1,16 +1,12 @@
 import { content } from "../../Content";
-import "./About.css";
 
 const About = () => {
   const { About } = content;
 
   return (
-    <section className="  bg-zinc-900">
-      <div className=" px-16 py-14">
-        <h1
-          className="title text-lime-500  lg:text-6xl text-start"
-          data-aos="fade-down"
-        >
+    <section className="  bg-zinc-900 p-100">
+      <div className=" px-10 lg:px-16 py-14 text-center lg:text-start ">
+        <h1 className="title text-lime-500  lg:text-6xl " data-aos="fade-down">
           {About.title}
         </h1>
         <h4 className="subtitle" data-aos="fade-down">
@@ -19,7 +15,7 @@ const About = () => {
 
         <br />
 
-        <div className="flex max-w-full items-center align-center justify-evenly">
+        <div className="flex  flex-col lg:flex-row  max-w-full  items-center align-center justify-evenly">
           <img
             src={About.image}
             alt="about me image"
@@ -30,13 +26,11 @@ const About = () => {
           <div
             data-aos="fade-left"
             className=" max-w-lg
-           p-6 shadow-sm rounded-xl rounded-br-[8rem] sm:min-w-[62rem]"
+           p-6 shadow-sm rounded-xl rounded-br-[8rem] sm:min-w-[62rem] min-h-fit"
           >
-            <h4 className="text-white">{About.para[0]}</h4>
+            <h4 className="text-white  leading-none">{About.para[0]}</h4>
             <br />
-            <p className="text-white leading-7 overflow-hidden">
-              {About.para[1]}
-            </p>
+            <p className="text-white leading-7">{About.para[1]}</p>
             <br />
           </div>
         </div>

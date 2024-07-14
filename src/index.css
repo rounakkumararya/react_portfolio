@@ -33,13 +33,13 @@
     @apply text-zinc-800;
   }
   h1 {
-    @apply font-Poppins lg:text-6xl text-3xl font-extrabold;
+    @apply font-Poppins lg:text-6xl text-4xl font-extrabold;
   }
   h2 {
-    @apply font-Poppins text-5xl font-bold;
+    @apply font-Poppins text-4xl font-bold;
   }
   h3 {
-    @apply font-Poppins text-5xl;
+    @apply font-Poppins text-3xl;
   }
   h4 {
     @apply md:text-4xl text-3xl !leading-relaxed font-Poppins;
@@ -108,3 +108,33 @@ html * ,body * {
   background-color: rgba(var(--color-cursor), var(--cursor-outline-shade));
 }
 
+.line-styling{
+  position: relative;
+  bottom: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 50px;
+  width: 80%;
+  margin: 20px 0 ;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  
+}
+
+.line-styling .style-circle{
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+.line-styling .style-line{
+  width: 95%;
+  height: 5px;
+  border-radius: 10px;
+}
+
+@media screen and (max-width:968px) {
+  .line-styling{
+    width: 60%;
+  }
+}

@@ -1,6 +1,6 @@
 // import content
 import { useEffect, useState } from "react";
-import { FaShareAlt } from "react-icons/fa";
+import { RiLeafFill } from "react-icons/ri";
 import { IoClose } from "react-icons/io5";
 import { content } from "../../Content";
 import { createElement } from "react";
@@ -11,14 +11,14 @@ const Hero = () => {
 
   return (
     <section className="">
-      <div className=" min-h-screen flex lg:flex-row flex-col-reverse lg:items-center justify-center items-center">
+      <div className=" min-h-screen flex lg:flex-row flex-col lg:items-center justify-center items-center">
         <div
           data-aos="slide-left"
           data-aos-delay="150"
           className="absolute h-full lg:w-6/12 w-3/12 top-0 right-0  bottom-0 -z-10"
         >
-          <img width="100%" height="200px" src={hero.background} alt="" />
-          <h1 className="rotate-90 absolute top-[50%] right-[-26%] text-lime-500">
+          <img width="100%" src={hero.background} alt="" />
+          <h1 className="rotate-90 absolute top-[50%] right-[-23%] text-lime-500">
             {hero.firstName}{" "}
             <span className=" text-zinc-500">{hero.LastName}</span>
           </h1>
@@ -26,13 +26,14 @@ const Hero = () => {
 
         {/* first col */}
         <div
-          className="pb-16 pl-20  flex flex-col align-middle items-center justify-center w-1/2 pt-20"
+          className="pb-16 md:pb-0 lg:pl-20 pt-40   flex flex-col justify-start lg:align-middle lg:items-center lg:justify-center w-3/4 lg:w-1/2 lg:pt-20"
           data-aos="fade-down"
         >
           <h1>
-            {hero.title[0]} <span className="text-lime-500">&</span>
+            {hero.title[0]}{" "}
+            <span className="text-lime-500 text-center block">&</span>
           </h1>
-          <h2>{hero.title[1]}</h2>
+          <h1>{hero.title[1]}</h1>
           <br />
           <div className="flex gap-5  justify-start">
             <button className="btn">{hero.btnText[0]}</button>
@@ -55,12 +56,12 @@ const Hero = () => {
         </div>
 
         {/* sec col */}
-        <div className="  md:h-[100vh] flex w-1/2 float-right items-end justify-start h-100">
+        <div className="md:pt-10 lg:pt-0  lg:h-[100vh] flex w-1/2 float-right items-end justify-end lg:justify-start h-100">
           <img
             src={hero.image}
             data-aos="slide-up"
             alt="Profile"
-            className="md:h-[90%] h-[15rem]  object-cover"
+            className="lg:h-[80%] md:h-[60%] h-[15rem]  object-cover"
           />
         </div>
         <button
@@ -70,7 +71,7 @@ const Hero = () => {
      }`}
           onClick={() => setShowMenu(!showMenu)}
         >
-          <FaShareAlt />
+          <RiLeafFill />
         </button>
         <div
           className={`fixed  z-[999] flex flex-col items-center gap-3 duration-300 transition  ${

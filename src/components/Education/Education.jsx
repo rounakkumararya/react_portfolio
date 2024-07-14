@@ -54,11 +54,8 @@ const Education = () => {
 
       {/* content */}
 
-      <div className=" px-32  py-14">
-        <h1
-          className="title text-lime-500  lg:text-6xl text-start"
-          data-aos="fade-down"
-        >
+      <div className=" lg:px-32  py-14  text-center lg:text-start">
+        <h1 className="title text-lime-500  lg:text-6xl " data-aos="fade-down">
           {Education.title}
         </h1>
         <h4 className="subtitle" data-aos="fade-down">
@@ -66,8 +63,8 @@ const Education = () => {
         </h4>
 
         <br />
-        <div className="flex justify-evenly">
-          <div className="flex flex-col w-full  items-center justify-center">
+        <div className="flex flex-col lg:flex-row justify-evenly">
+          <div className="flex flex-col w-full p-10 items-center justify-center">
             {Education.details.map((detail, i) => (
               <div
                 data-aos="fade-up"
@@ -75,21 +72,29 @@ const Education = () => {
                 key={i}
                 className="
                 flex flex-col item-end mt-8
-               gap-2 p-6 rounded-2xl  bg-lime-500"
+               lg:gap-2 lg:p-6 p-3 rounded-2xl  bg-lime-500 "
               >
-                <p className="text-white">{detail.year}</p>
+                <p className="text-white text-xs lg:text-sm">{detail.year}</p>
                 <h4 className="text-white">{detail.degree}</h4>
-                <p className="text-white">{detail.institute}</p>
+                <p className="text-white text-xs lg:text-sm">
+                  {detail.institute}
+                </p>
               </div>
             ))}
           </div>
+
           <img
             src={Education.image}
             alt="about me image"
             data-aos="fade-right"
-            className="float-right"
+            className="lg:float-right pt-10"
           />
         </div>
+      </div>
+      <div className="line-styling">
+        <div className="style-line bg-lime-500"></div>
+        <div className="style-circle bg-lime-500"></div>
+        <div className="style-circle bg-lime-500"></div>
       </div>
     </section>
   );
