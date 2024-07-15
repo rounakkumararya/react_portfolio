@@ -83,7 +83,7 @@ const Hero = () => {
               href={item.link}
               onClick={() => setActive(i)}
               target="_blank"
-              className="text-3xl  bg-slate-200/60 px-3 py-3 backdrop-blur-md  text-stone-700 active:scale-95 hover:scale-150 duration-200  p-2 rounded-full "
+              className="text-3xl  bg-slate-200/90 px-3 py-3 backdrop-blur-md  text-stone-700 active:scale-95 hover:scale-150 duration-200  p-2 rounded-full "
             >
               {createElement(item.icon, { color: item.color })}
             </a>

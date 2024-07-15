@@ -20,7 +20,7 @@ const Education = () => {
   }
 
   return (
-    <section className=" min-h-fit bg-zinc-900" id="skills">
+    <section className=" min-h-fit bg-zinc-900 pt-10" id="skills">
       {/* modal */}
       {/* <Modal
         isOpen={modalIsOpen}
@@ -54,7 +54,7 @@ const Education = () => {
 
       {/* content */}
 
-      <div className=" lg:px-32  py-14  text-center lg:text-start">
+      <div className=" lg:px-16  py-14  text-center lg:text-start">
         <h1 className="title text-lime-500  lg:text-6xl " data-aos="fade-down">
           {Education.title}
         </h1>
@@ -72,7 +72,7 @@ const Education = () => {
                 key={i}
                 className="
                 flex flex-col item-end mt-8
-               lg:gap-2 lg:p-6 p-3 rounded-2xl  bg-lime-500 "
+               lg:gap-2 lg:p-6 p-6 rounded-2xl  bg-lime-500 "
               >
                 <p className="text-white text-xs lg:text-sm">{detail.year}</p>
                 <h4 className="text-white">{detail.degree}</h4>

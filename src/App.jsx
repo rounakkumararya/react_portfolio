@@ -38,11 +38,12 @@ const App = () => {
       <section>
         <About />
       </section>
-      <section>
-        <Education />
-      </section>
+
       <section>
         <Achievements />
+      </section>
+      <section>
+        <Education />
       </section>
 
       <Skills />

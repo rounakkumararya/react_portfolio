@@ -4,7 +4,7 @@ const About = () => {
   const { About } = content;
 
   return (
-    <section className="  bg-zinc-900 p-100">
+    <section className="  bg-zinc-900 ">
       <div className=" px-10 lg:px-16 py-14 text-center lg:text-start ">
         <h1 className="title text-lime-500  lg:text-6xl " data-aos="fade-down">
           {About.title}

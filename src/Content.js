@@ -7,6 +7,22 @@ import ps from "./assets/images/Skills/ps.png";
 import reactjs from "./assets/images/Skills/react.png";
 import nodejs from "./assets/images/Skills/node.png";
 import python from "./assets/images/Skills/python.png";
+import adobexd from "./assets/images/Skills/adobexd.png";
+import bootstrap from "./assets/images/Skills/bootstrap.png";
+import css from "./assets/images/Skills/css.png";
+import express from "./assets/images/Skills/express.png";
+import firebase from "./assets/images/Skills/firebase.png";
+import git from "./assets/images/Skills/git.png";
+import html from "./assets/images/Skills/html.png";
+import java from "./assets/images/Skills/java.png";
+import javascript from "./assets/images/Skills/javascript.png";
+import jquery from "./assets/images/Skills/jquery.png";
+import mongo from "./assets/images/Skills/mongo.png";
+import nextjs from "./assets/images/Skills/nextjs.png";
+import postgres from "./assets/images/Skills/postgres.png";
+import postman from "./assets/images/Skills/postman.png";
+import redux from "./assets/images/Skills/redux.png";
+import tailwind from "./assets/images/Skills/tailwind.png";
 
 import logo from "../src/assets/images/logo/logo.svg";
 import services_logo1 from "./assets/images/Services/Group 42.svg";
@@ -195,11 +211,10 @@ export const content = {
   Skills: {
     title: "Skills",
     subtitle: "Tools And Technologies",
-    skills_content: [
+    front_end: [
       {
-        name: "Node js",
-
-        logo: nodejs,
+        name: "Javascript",
+        logo: javascript,
       },
       {
         name: "React js",
@@ -207,19 +222,96 @@ export const content = {
         logo: reactjs,
       },
       {
-        name: "Python",
+        name: "HTML",
+
+        logo: html,
+      },
+      {
+        name: "CSS",
+        logo: css,
+      },
+      {
+        name: "Bootstrap",
+
+        logo: bootstrap,
+      },
+      {
+        name: "Tailwind",
+
+        logo: tailwind,
+      },
+      {
+        name: "Redux",
+
+        logo: redux,
+      },
+      {
+        name: "Jquery",
+
+        logo: jquery,
+      },
+    ],
+    back_end: [
+      {
+        name: "Next js",
+
+        logo: nextjs,
+      },
+      {
+        name: "Node js",
+
+        logo: nodejs,
+      },
+      {
+        name: "ExpressJs",
+
+        logo: express,
+      },
+      {
+        name: "Firebase",
+
+        logo: firebase,
+      },
+      {
+        name: "MongoDb",
+        logo: mongo,
+      },
+      {
+        name: "Postgresql",
+
+        logo: postgres,
+      },
+    ],
+    others: [
+      {
+        name: "Java",
+
+        logo: java,
+      },
+      {
+        name: "python",
 
         logo: python,
       },
       {
+        name: "Photoshop",
+
+        logo: ps,
+      },
+      {
         name: "Figma",
-        para: "",
+
         logo: figma,
       },
       {
         name: "Adobe xd",
 
-        logo: ps,
+        logo: adobexd,
+      },
+      {
+        name: "Git",
+
+        logo: git,
       },
     ],
     icon: MdArrowForward,

@@ -34,7 +34,7 @@ const Contact = () => {
   };
 
   return (
-    <section className=" bg-lime-500 text-white" id="contact">
+    <section className=" bg-lime-300 text-white" id="contact">
       <Toaster />
       <div className="md:container px-5 py-14">
         <h2 className="title text-white" data-aos="fade-down">
