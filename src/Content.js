@@ -1,6 +1,6 @@
 // import images
 import Hero_person from "./assets/images/Hero/hero1.png";
-import Hero_bg from "./assets/images/Hero/heroBG.png";
+import Hero_bg from "../public/heroBg.png";
 
 import figma from "./assets/images/Skills/figma.png";
 import ps from "./assets/images/Skills/ps.png";
