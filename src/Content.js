@@ -312,6 +312,11 @@ export const content = {
 
         logo: git,
       },
+      {
+        name: "Postman",
+
+        logo: postman,
+      },
     ],
     icon: MdArrowForward,
   },
