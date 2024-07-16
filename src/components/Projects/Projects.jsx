@@ -50,6 +50,25 @@ const Projects = () => {
           </Swiper>
         </div>
       </div>
+      <div class="relative group">
+        <div class="overflow-hidden">
+          <div class="flex transition-transform duration-500 ease-in-out">
+            <img
+              src={content.image}
+              alt="Image 1"
+              class="w-full h-full object-cover"
+            />
+            <img
+              src="image2.jpg"
+              alt="Image 2"
+              class="w-full h-full object-cover"
+            />
+          </div>
+        </div>
+        <div class="absolute top-0 left-0 w-full h-full flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+          <p class="text-white text-center">Image 1 Preview</p>
+        </div>
+      </div>
     </section>
   );
 };
