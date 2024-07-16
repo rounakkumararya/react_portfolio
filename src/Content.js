@@ -341,19 +341,30 @@ export const content = {
   Projects: {
     title: "Projects",
     subtitle: "MY CREATION",
-    image: person_project,
     project_content: [
       {
         title: "Gym Website",
+        category: "MERN",
         image: project1,
+        description:
+          "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, dolorum deleniti magnam placeat, quisquam quaerat laborum inventore aliquam veniam cumque vitae sequi itaque sint? Eaque praesentium ipsam maiores perspiciatis molestiae. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magni aperiam quasi, aliquam dolorum, eos rerum obcaecati beatae consequatur itaque illum hic rem voluptatibus provident ea, eius voluptate aliquid veritatis placeat?",
+        link: "https://www.github.com/rounakkumararya",
       },
       {
         title: "Social Media web",
+        category: "MERN",
         image: project2,
+        description:
+          "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, dolorum deleniti magnam placeat, quisquam quaerat laborum inventore aliquam veniam cumque vitae sequi itaque sint? Eaque praesentium ipsam maiores perspiciatis molestiae. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magni aperiam quasi, aliquam dolorum, eos rerum obcaecati beatae consequatur itaque illum hic rem voluptatibus provident ea, eius voluptate aliquid veritatis placeat?",
+        link: "https://www.github.com/rounakkumararya",
       },
       {
         title: "Creative Website",
+        category: "MERN",
         image: project3,
+        description:
+          "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, dolorum deleniti magnam placeat, quisquam quaerat laborum inventore aliquam veniam cumque vitae sequi itaque sint? Eaque praesentium ipsam maiores perspiciatis molestiae. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magni aperiam quasi, aliquam dolorum, eos rerum obcaecati beatae consequatur itaque illum hic rem voluptatibus provident ea, eius voluptate aliquid veritatis placeat?",
+        link: "https://www.github.com/rounakkumararya",
       },
     ],
   },
